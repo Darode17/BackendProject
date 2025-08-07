@@ -1,11 +1,9 @@
 package repository;
 
+import model.Donor;
+import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import model.Donar;
-
-public interface DonorRepository extends JpaRepository<Donar, Long> {
-    List<Donar> findByBloodGroupAndCityAndAvailableTrue(String bloodGroup, String city);
+public interface DonorRepository extends JpaRepository<Donor, Long> {
+    List<Donor> findByBloodGroupAndCityAndAvailableTrue(String bloodGroup, String city);
 }

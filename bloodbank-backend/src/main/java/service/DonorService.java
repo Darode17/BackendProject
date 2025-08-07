@@ -1,12 +1,31 @@
 package service;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
+import model.Donor;
 import repository.DonorRepository;
 
+@Service
 public class DonorService {
-    @Autowired
-    private DonorRepository donarRepo;
 
-    
+    @Autowired
+    private DonorRepository donorRepo;
+
+    public Donor createDonor(Donor donor) {
+        return donorRepo.save(donor);
+    }
+
+    public List<Donor> getAllDonors() {
+        return donorRepo.findAll();
+    }
+
+    public Donor getDonor(Long id) {
+        return donorRepo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Donor not found"));
+    }
+
+    public void deleteDonor(Long id) {
+        donorRepo.deleteById(id);
+    }
 }
