@@ -1,4 +1,4 @@
-package controller;
+package com.backend.bloodbank_backend.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import Utility.JwtUtil;
-import dto.LoginRequest;
-import dto.LoginResponse;
-import model.User;
-import repository.UserRepository;
-import service.UserDetailsServiceImpl;
+import com.backend.bloodbank_backend.Utility.JwtUtil;
+import com.backend.bloodbank_backend.dto.LoginRequest;
+import com.backend.bloodbank_backend.dto.LoginResponse;
+import com.backend.bloodbank_backend.model.User;
+import com.backend.bloodbank_backend.repository.UserRepository;
+import com.backend.bloodbank_backend.service.UserDetailsServiceImpl;
 
 @RestController
 @RequestMapping("/api/auth")

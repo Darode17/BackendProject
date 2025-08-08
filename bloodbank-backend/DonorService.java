@@ -3,8 +3,9 @@ package service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import model.Donor;
-import repository.DonorRepository;
+
+import com.backend.bloodbank_backend.model.Donor;
+import com.backend.bloodbank_backend.repository.DonorRepository;
 
 @Service
 public class DonorService {

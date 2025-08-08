@@ -1,11 +1,9 @@
-package model;
+package com.backend.bloodbank_backend.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "donors")
 public class Donor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

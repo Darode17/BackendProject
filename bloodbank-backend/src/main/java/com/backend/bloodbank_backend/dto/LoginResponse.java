@@ -1,4 +1,4 @@
-package dto;
+package com.backend.bloodbank_backend.dto;
 
 public class LoginResponse {
     private String token;

@@ -1,4 +1,4 @@
-package Utility;
+package com.backend.bloodbank_backend.Utility;
 
 import java.io.IOException;
 
@@ -10,11 +10,12 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+import com.backend.bloodbank_backend.service.UserDetailsServiceImpl;
+
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import service.UserDetailsServiceImpl;
 
 @Component
 public class JwtFilter extends OncePerRequestFilter {

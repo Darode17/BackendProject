@@ -1,4 +1,4 @@
-package dto;
+package com.backend.bloodbank_backend.dto;
 
 public class LoginRequest {
     private String username;
